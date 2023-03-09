@@ -1,0 +1,40 @@
+.abs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f7;
+}
+
+.modalContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    gap: 4rem;
+
+    & span {
+        cursor: pointer;
+
+        &:hover {
+            color: #676869;
+        }
+    }
+}
+
+.modalList, .modalAlbum {
+    & ol {
+        & li {
+            padding: .5rem 0rem;
+
+            &:first-child {
+                padding: 0rem 0rem .5rem 0rem;
+            }
+
+            &:last-child {
+                padding: .5rem 0rem 0rem 0rem;
+            }
+        }
+    }
+}
